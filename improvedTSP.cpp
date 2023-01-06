@@ -45,7 +45,8 @@ int rand_num(int start, int end) {
 // has already occurred in the string
 bool repeat(std::string s, char ch) {
     for (char currentChar : s) {
-        return currentChar == ch;
+        if (currentChar == ch)
+			return true;
     }
     return false;
 }
